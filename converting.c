@@ -35,4 +35,25 @@ void converting()
 	}
 
 	printf("*** End of Converting Strings to int Demo ***\n\n");
+
+    // Project: Version 2
+    // converting double strings to double
+    printf("*** Start of Converting Strings to double Demo ***\n");
+
+	char double_string[80];
+	double double_number;
+
+	printf("Type the double numeric string (q - to quit): \n");
+	gets(double_string);
+
+	// define loop to convert input strings to double until quit
+	while (strcmp(double_string, "q") != 0) // compare input string with q
+	{
+		double_number = atof(double_string); // convert string to double
+		printf("Converted number is %f\n", double_number);
+		printf("Type the double numeric string (q - to quit): \n");
+		gets(double_string);
+	}
+
+	printf("*** End of Converting Strings to double Demo ***\n\n");
 }
